@@ -1,4 +1,9 @@
-vim.opt.guicursor = ""
+vim.opt.guicursor = {
+    "n-v-c:block",          -- Normal, Visual, and Command mode: block cursor
+    "i:block-blinkwait700-blinkoff400-blinkon250", -- Insert mode: block blinking
+    "i:block-orange",       -- Insert mode: orange block cursor (requires terminal support)
+    "r-cr:block",           -- Replace and Command-line Replace: block cursor
+}
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
