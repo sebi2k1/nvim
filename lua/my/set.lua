@@ -1,9 +1,10 @@
 vim.opt.guicursor = {
-    "n-v-c:block",          -- Normal, Visual, and Command mode: block cursor
-    "i:block-blinkwait700-blinkoff400-blinkon250", -- Insert mode: block blinking
-    "i:block-orange",       -- Insert mode: orange block cursor (requires terminal support)
-    "r-cr:block",           -- Replace and Command-line Replace: block cursor
+    "v-r-c:block",          -- Normal, Visual, and Command-line mode use a block cursor
+    "i:block-CursorOrange", -- Insert mode uses a vertical cursor with the "CursorOrange" highlight group
+    "n-cr:hor20",           -- Replace mode and Command-line replace mode use a horizontal cursor
 }
+
+vim.cmd("highlight CursorOrange guifg=NONE guibg=orange")
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -34,5 +35,3 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
-
-
