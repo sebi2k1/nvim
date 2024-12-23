@@ -1,10 +1,6 @@
 vim.opt.guicursor = {
-    "v-r-c:block",          -- Normal, Visual, and Command-line mode use a block cursor
-    "i:block-CursorOrange", -- Insert mode uses a vertical cursor with the "CursorOrange" highlight group
-    "n-cr:hor20",           -- Replace mode and Command-line replace mode use a horizontal cursor
+    "v-n-i-r-c:block",
 }
-
-vim.cmd("highlight CursorOrange guifg=NONE guibg=orange")
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
