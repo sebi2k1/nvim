@@ -1,5 +1,8 @@
 vim.g.mapleader = ' '
 
+-- Ignore F1, as hit it all the time by accident ;-)
+vim.keymap.set({"n", "v", "i"}, "<F1>", function() end)
+
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader><Tab>", vim.cmd.ClangdSwitchSourceHeader)
 vim.keymap.set("n", "<leader>b", "<cmd>Telescope buffers<CR>")
