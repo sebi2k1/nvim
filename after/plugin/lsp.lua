@@ -2,7 +2,7 @@
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guide/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = { 'ts_ls', 'tailwindcss', 'gopls', 'lua_ls', 'rust_analyzer', 'clangd' },
+    ensure_installed = { 'ts_ls', 'tailwindcss', 'gopls', 'lua_ls', 'rust_analyzer', 'clangd', 'yamlls' },
     handlers = {
         function(server_name)
             local lsp_capabilities = require('blink.cmp').get_lsp_capabilities()
