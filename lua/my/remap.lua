@@ -5,7 +5,7 @@ vim.keymap.set({"n", "v", "i"}, "<F1>", function() end)
 
 vim.keymap.set("n", "<leader>pv", "<cmd>Oil<cr>")
 vim.keymap.set("n", "<leader><Tab>", vim.cmd.ClangdSwitchSourceHeader)
-vim.keymap.set("n", "<leader>b", "<cmd>Telescope buffers<CR>")
+vim.keymap.set("n", "<leader>bl", "<cmd>Telescope buffers<CR>")
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
