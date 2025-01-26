@@ -7,7 +7,7 @@ return {
                 quit = true, -- quit Neovim when last buffer is closed
             }
 
-            vim.keymap.set("n", "<leader>bd", "<cmd>BufDel<CR>")
+            vim.keymap.set("n", "<leader>w", "<cmd>BufDel<CR>")
         end
     }
 }
